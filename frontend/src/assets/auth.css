@@ -1,0 +1,146 @@
+/* ================================
+   CIVICX AUTHENTICATION STYLES
+   Used for: signup.html & login.html
+   Author: Daru + Chatty (GPT-5)
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Layout ===== */
+body {
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 40px 45px;
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* ===== Headings ===== */
+.auth-container h1 {
+  text-align: center;
+  color: #065f46;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Form Structure ===== */
+.auth-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-form li {
+  margin-bottom: 18px;
+}
+
+.auth-form label {
+  display: block;
+  color: #334155;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.auth-form input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+/* ===== Buttons ===== */
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: linear-gradient(135deg, #34d399, #059669);
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(5, 150, 105, 0.3);
+}
+
+/* ===== Text & Links ===== */
+.auth-form p {
+  margin-top: 15px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.auth-form a {
+  color: #059669;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.auth-form a:hover {
+  color: #047857;
+  text-decoration: underline;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .auth-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .auth-form input {
+    font-size: 0.95rem;
+  }
+
+  .auth-form button {
+    font-size: 0.95rem;
+  }
+}
