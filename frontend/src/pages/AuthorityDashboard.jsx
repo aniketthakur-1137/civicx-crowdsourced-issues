@@ -46,7 +46,8 @@ const AuthorityDashboard = () => {
 
           {issue.image && (
             <img
-              src={`http://localhost:5000${issue.image}`}
+              src={`https://civicx-host.onrender.com
+${issue.image}`}
               width="250"
               alt="issue"
             />

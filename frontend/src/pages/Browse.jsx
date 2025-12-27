@@ -73,7 +73,7 @@ const Browse = () => {
                 <img
                   src={
                     issue.image
-                      ? `http://localhost:5000${issue.image}`
+                      ? `https://civicx-host.onrender.com${issue.image}`
                       : "https://via.placeholder.com/600x400?text=No+Image"
                   }
                   alt="Issue"
@@ -143,7 +143,8 @@ const Browse = () => {
 
             {selectedIssue.image && (
               <img
-                src={`http://localhost:5000${selectedIssue.image}`}
+                src={`https://civicx-host.onrender.com
+${selectedIssue.image}`}
                 alt="Issue"
                 style={{ width: "100%", borderRadius: "8px" }}
               />

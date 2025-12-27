@@ -87,7 +87,7 @@ const Profile = () => {
 
           {issue.image && (
             <img
-              src={`http://localhost:5000${issue.image}`}
+              src={`https://civicx-host.onrender.com${issue.image}`}
               alt="issue"
               style={{ width: 220, marginTop: 10, borderRadius: 8 }}
             />
