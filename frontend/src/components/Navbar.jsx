@@ -32,7 +32,8 @@ const Navbar = () => {
   /* ===============================
      AUTH (SINGLE SOURCE)
   =============================== */
-  const user = JSON.parse(localStorage.getItem("user"));
+  
+const user = JSON.parse(localStorage.getItem("user") || "null");
 
   const handleLogout = () => {
     localStorage.removeItem("token");
