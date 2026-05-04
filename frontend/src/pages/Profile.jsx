@@ -45,7 +45,7 @@ const Profile = () => {
   const deleteAccount = async () => {
     if (!window.confirm("⚠️ This will delete your account permanently")) return;
 
-    await API.delete("/auth/me");
+    await API.delete("/auth/delete");
     localStorage.clear();
     window.dispatchEvent(new Event("auth-change"));
     navigate("/signup");
