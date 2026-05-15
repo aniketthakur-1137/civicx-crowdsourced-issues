@@ -88,6 +88,8 @@ export const login = async (req, res) => {
   }
 };
 
+console.log(req.body);
+
 export const deleteAccount = async (req, res) => {
   try {
     // delete all user's issues
