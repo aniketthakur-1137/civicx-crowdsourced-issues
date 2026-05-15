@@ -22,6 +22,8 @@ export const getIssueStats = async (req, res) => {
 };
 
 export const createIssue = async (req, res) => {
+   console.log(req.body);
+console.log(req.file);
     try{
   const issue = await Issue.create({
     
@@ -40,8 +42,7 @@ export const createIssue = async (req, res) => {
       message: "Failed to create issue",
     });
   }
-  console.log(req.body);
-console.log(req.file);
+ 
 };
 
 export const getIssues = async (req, res) => {
