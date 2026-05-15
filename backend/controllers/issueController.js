@@ -100,7 +100,7 @@ export const getMyIssues = async (req, res) => {
   }
 };
 
-
+console.log(req.body);
 // ❌ Delete logged-in user's issue
 export const deleteMyIssue = async (req, res) => {
   try {
