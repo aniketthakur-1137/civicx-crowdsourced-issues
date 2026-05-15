@@ -47,7 +47,8 @@ const handleSubmit = async (e) => {
   try {
     // 🔥 IMPORTANT: FormData use karna hai
     const formData = new FormData();
-
+    formData.append("name", name);
+    formData.append("email", email);
     formData.append("title", issue);        // backend expects title
     formData.append("description", issue);
     formData.append("location", location);
