@@ -40,6 +40,8 @@ export const createIssue = async (req, res) => {
       message: "Failed to create issue",
     });
   }
+  console.log(req.body);
+console.log(req.file);
 };
 
 export const getIssues = async (req, res) => {
